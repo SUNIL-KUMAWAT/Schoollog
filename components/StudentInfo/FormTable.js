@@ -20,34 +20,6 @@ import { useStudentStore } from './StudentStore';
 //   progress: number
 // }
 
-
-// const defaultData = [
-//   {
-//     firstName: 'tanner',
-//     lastName: 'linsley',
-//     age: 24,
-//     visits: 100,
-//     status: 'In Relationship',
-//     progress: 50,
-//   },
-//   {
-//     firstName: 'tandy',
-//     lastName: 'miller',
-//     age: 40,
-//     visits: 40,
-//     status: 'Single',
-//     progress: 80,
-//   },
-//   {
-//     firstName: 'joe',
-//     lastName: 'dirte',
-//     age: 45,
-//     visits: 20,
-//     status: 'Complicated',
-//     progress: 10,
-//   },
-// ]
-
 const columnHelper = createColumnHelper();
 
 const columns = [
@@ -67,7 +39,7 @@ const columns = [
     // footer: info => info.column.id,
   }),
   columnHelper.accessor('Gender', {
-    header: () => <span>Visits</span>,
+    header: () => <span>Gender</span>,
     // footer: info => info.column.id,
   }),
   columnHelper.accessor('Email', {
@@ -82,8 +54,9 @@ const columns = [
 
 const FormTable = () => {
     const students = useStudentStore((state => state.students))
-    console.log(students)
   const [data, setData] = useState(() => [...students])
+  console.log(students)
+  console.log(data)
   const rerender = useReducer(() => ({}), {})[1]
 
   const table = useReactTable({

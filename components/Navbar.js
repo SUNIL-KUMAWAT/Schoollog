@@ -26,18 +26,15 @@ const Navbar = () => {
   return (
     <Box>
       <Box w={'100%'}>
-        {/* <Img position={'static'} zIndex={-1} src='/water.jpg' alt="" w={'100%'} backgroundImage={{url:'./water.jpg'}}/>   */}
-        {/* <Img  src='/DigitalMarketingFrontPic.jpg'  alt="" width={'100%'}  />  */}
         <AliceCarousel paddingLeft disableButtonsControls autoPlay animationDuration={'40000'} disableDotsControls infinite
-          // responsive={responsive}
           mouseTracking items={items} />
       </Box>
       <Box
         align='center'>
         <Img src="schoollog.png" w={{ base: '160px', md: '240', lg: '300px' }} ></Img>
-        <Text fontSize={{ base: '18px', md: '24', lg: '32px' }} color={'white'} fontFamily={'sans-serif'}>Taking your brand seeds to the digital soil</Text>
-        <Text fontSize={{ base: '18px', md: '24', lg: '32px' }} color={'white'} mt={'-1%'} fontFamily={'sans-serif'}>&</Text>
-        <Text fontSize={{ base: '18px', md: '24', lg: '32px' }} color={'white'} mt={'-1%'} fontFamily={'sans-serif'}><b style={{ color: 'skyblue' }}>Schoollog</b> them!</Text>
+        <Text fontSize={{ base: '18px', md: '24', lg: '30px' }}  style={{ letterSpacing: '1px', wordSpacing: '1px', }}  color={'white'} fontFamily={'sans-serif'}>Taking your brand seeds to the digital soil</Text>
+        <Text fontSize={{ base: '18px', md: '24', lg: '28px' }} color={'white'} mt={'-1%'} fontFamily={'sans-serif'}>&</Text>
+        <Text fontSize={{ base: '18px', md: '24', lg: '30px' }} style={{ letterSpacing: '1px', wordSpacing: '1px' }}  color={'white'} mt={'-1%'} fontFamily={'sans-serif'}><b style={{ color: 'skyblue' }}>Schoollog</b> them!</Text>
       </Box>
 
     </Box>
