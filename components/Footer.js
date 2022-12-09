@@ -50,7 +50,7 @@ const Footer = () => {
                <Flex direction={'column'} pl={'15px'}>
                   <Text fontSize={'18'} color={'white'}>Reach Out Us!</Text>
                   <Link href="tel:8765444567">
-                     <Text cursor={'pointer'} fontSize={'20'} _hover={{ color: 'gray.300' }} color={'white'}>+91 76653-63555</Text>
+                     <Text cursor={'pointer'} fontSize={'20'} _hover={{ color: 'gray.300' }} color={'white'}>+91 76964-37723</Text>
                   </Link>
                </Flex>
             </Stack>
