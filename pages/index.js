@@ -19,6 +19,8 @@ import Seo from '../components/Seo'
 import ContactUs from '../components/ContactUs'
 import Experience from '../components/Experience'
 import Icons from '../components/Icons'
+import BoxDesign from '../components/BoxDesign'
+import WhoAre from '../components/WhoAre'
 
 export default function Home() {
   return (
@@ -39,7 +41,9 @@ export default function Home() {
       </Head>
       {/* <Icons/> */}
        <Navbar /> 
-       <WhoAreWe/>
+       {/* <BoxDesign/> */}
+       {/* <WhoAreWe/> */}
+       <WhoAre/>
        <WhatWeDo/>
        <SocialMediaMarketing/>
        <BreakDesign/>

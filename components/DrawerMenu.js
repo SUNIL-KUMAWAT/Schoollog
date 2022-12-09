@@ -41,8 +41,7 @@ const DrawerMenu = () => {
     { id: "/Testimonials", title: 'Testimonials', },
     { id: "https://schoollog.in/", target: '_blank', title: 'Life at Schoollog', },
     { id: "/JoinTeam", title: 'Join the Team', },
-    { id: "/#Contactus", title: 'Contact us', },
-   
+    { id: "/#Contactus", title: 'Contact Us', },
   ]
 
   const services = [
@@ -82,9 +81,9 @@ const DrawerMenu = () => {
   return (
     <Box position={'relative'} zIndex={1}>
       <Flex justify={'flex-end'} mr={5} >
-        <HamburgerIcon cursor={'pointer'} _hover={{ color: 'red' }} mt={10} fontSize={'26px'} position={'fixed'} ref={btnRef} color='black' onClick={onOpen} />
+        <HamburgerIcon cursor={'pointer'} _hover={{ color: 'red' }} mt={10}
+          fontSize={'26px'} position={'fixed'} ref={btnRef} color='#660033' onClick={onOpen} />
       </Flex>
-
       <Drawer
         blockScrollOnMount={false}
         isOpen={isOpen}
@@ -113,7 +112,8 @@ const DrawerMenu = () => {
                 // eslint-disable-next-line react/jsx-key
                 return <>
                   {index == 2 ?
-                    <Text textAlign='left' cursor={'pointer'} _hover={{ color: '#ff214f' }} fontSize={'20px'} onClick={dropDownServices} >
+                    <Text textAlign='left' cursor={'pointer'} _hover={{ color: '#ff214f' }}
+                      fontSize={'20px'} onClick={dropDownServices}  >
                       {list.title}
                       {dropDown === true ?
                         <ChevronUpIcon ml={'130px'} />
@@ -122,13 +122,21 @@ const DrawerMenu = () => {
                       }
                     </Text>
                     :
-                    <Text textAlign='left' _hover={{ color: '#ff214f' }} mt={'35px'} fontSize={'20px'} color={router.pathname === list.id ? "red.300" : "gray.700"} cursor={'pointer'}>
-                      <Link href={list?.id} passHref target={list.target}  > {list.title}</Link>
+                    <Text textAlign='left' _hover={{ color: '#ff214f' }} mt={'35px'}
+                      fontSize={'20px'} fontFamily={"['Montserrat, sans-serif']"}
+                      color={router.pathname === list.id ? "red.300" : "gray.700"}
+                      cursor={'pointer'}>
+                      <Link href={list?.id} passHref target={list.target} > {list.title}</Link>
                     </Text>
                   }
                   {index === 2 ?
                     dropDown === true ?
-                      services.map((List, index) => { return <Flex key={index} pl={5} _hover={{ color: '#ff214f', textDecoration: 'underline' }}><Link style={{ fontSize: '18px' }} href={List?.id} passHref _hover={{ color: '#ff214f' }} >{List.title}</Link></Flex> })
+                      services.map((List, index) => {
+                        return <Flex fontFamily={"['Montserrat, sans-serif']"}
+                          key={index} pl={5} _hover={{ color: '#ff214f', textDecoration: 'underline' }}>
+                          <Link style={{ fontSize: '18px' }} href={List?.id} passHref _hover={{ color: '#ff214f' }} >{List.title}</Link>
+                        </Flex>
+                      })
                       : null
                     :
                     null
@@ -140,13 +148,20 @@ const DrawerMenu = () => {
           <DrawerFooter justifyContent={'left'}>
             {links.map((d) => {
               return (
-                <Button bg={'white'} size={'sm'} mr={'12px'} boxShadow='0px 0px 3px blue' key={d.path} _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'} ><Link href={d.path} target="_blank">{d.iconName}</Link></Button>
+                <Button bg={'white'} size={'sm'} mr={'12px'} boxShadow='0px 0px 3px blue'
+                  key={d.path} _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'} >
+                  <Link href={d.path} target="_blank">
+                    {d.iconName}
+                  </Link>
+                </Button>
               )
             })}
           </DrawerFooter>
           <HStack ml={6}>
             <AiOutlineCopyrightCircle fontSize={12} color={'#ff214f'} />
-            <Text fontSize={10}>  <b>Schoollog All</b> RIGHTS RESERVED</Text>
+            <Text fontSize={10}>  <b>Schoollog All</b>
+              RIGHTS RESERVED
+            </Text>
           </HStack>
         </DrawerContent>
       </Drawer>
