@@ -29,7 +29,7 @@ const StudentForm = () => {
             ...regForm,
             data
         ])    
-        addStudent(regForm);        
+        addStudent(data);        
     }
    
     

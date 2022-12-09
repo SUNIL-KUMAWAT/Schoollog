@@ -1,7 +1,8 @@
 import { EmailIcon, HamburgerIcon, PhoneIcon } from "@chakra-ui/icons";
 import { Box, Button, Flex } from "@chakra-ui/react";
 import Link from "next/link";
-import { AiOutlineMessage, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineWhatsApp } from "react-icons/ai";
+import { FaLinkedinIn } from "react-icons/fa";
 
 // cursor={'pointer'} style={{ padding: '8px', height: '32px', width: '32px', boxShadow: '0px 0px 8px blue', marginTop: '5px', backgroundColor: 'white' }}
 const Icons = () => {
@@ -11,8 +12,8 @@ const Icons = () => {
             path: 'https://api.whatsapp.com/send/?phone=917015179549&text=Hi+Schoollog%21+I+would+like+to+buy+your+erp&type=phone_number&app_absent=0'
         },
         {
-            iconName: <AiOutlineMessage />,
-            path: '2'
+            iconName: <FaLinkedinIn />,
+            path: 'https://in.linkedin.com/school/schoollog/'
         },
         {
             iconName: <PhoneIcon />,
@@ -30,7 +31,9 @@ const Icons = () => {
             <Flex direction={'column'} mt={{ base: '200px', md: '220px' }} position={'fixed'} >
                 {links.map((d) => {
                     return (
-                        <Button bg={'white'} size={'sm'} mt={'5px'} boxShadow='0px 0px 6px blue' key={d.path} _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'} ><Link href={d.path} target="_blank">{d.iconName}</Link></Button>
+                        <Button bg={'white'} size={'sm'} mt={'8px'} boxShadow='0px 0px 3px blue'
+                         key={d.path} _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'} >
+                            <Link href={d.path} target="_blank">{d.iconName}</Link></Button>
                     )
                 })}
             </Flex>

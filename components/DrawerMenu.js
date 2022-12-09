@@ -28,6 +28,7 @@ import { useRef, useState } from 'react'
 import { AiOutlineCopyrightCircle, AiOutlineMessage, AiOutlineWhatsApp } from "react-icons/ai";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import { FaLinkedinIn } from "react-icons/fa";
 
 
 const DrawerMenu = () => {
@@ -41,14 +42,14 @@ const DrawerMenu = () => {
     { id: "https://schoollog.in/", target: '_blank', title: 'Life at Schoollog', },
     { id: "/JoinTeam", title: 'Join the Team', },
     { id: "/#Contactus", title: 'Contact us', },
-    { id: "/aboutUs11", title: 'Career', },
+   
   ]
 
   const services = [
     { id: "/#SocialMediaMarketing", title: 'Social Media Marketing', },
     { id: "/#GraphicDesign", title: 'Graphic Design', },
     { id: "/#WebDesign", title: 'Web Design', },
-    { id: "/#Seo", title: 'Seo', },
+    { id: "/#Seo", title: 'SEO', },
   ]
 
   const links = [
@@ -57,8 +58,8 @@ const DrawerMenu = () => {
       path: 'https://api.whatsapp.com/send/?phone=917015179549&text=Hi+Schoollog%21+I+would+like+to+buy+your+erp&type=phone_number&app_absent=0'
     },
     {
-      iconName: <AiOutlineMessage />,
-      path: '2'
+      iconName: <FaLinkedinIn />,
+      path: 'https://in.linkedin.com/school/schoollog/'
     },
     {
       iconName: <PhoneIcon />,
