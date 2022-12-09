@@ -21,6 +21,7 @@ import Experience from '../components/Experience'
 import Icons from '../components/Icons'
 import BoxDesign from '../components/BoxDesign'
 import WhoAre from '../components/WhoAre'
+import Header from '../components/Header'
 
 export default function Home() {
   return (
@@ -41,8 +42,10 @@ export default function Home() {
       </Head>
       {/* <Icons/> */}
        <Navbar /> 
+       {/* <AboutUs/> */}
        {/* <BoxDesign/> */}
        {/* <WhoAreWe/> */}
+       {/* <Header/> */}
        <WhoAre/>
        <WhatWeDo/>
        <SocialMediaMarketing/>

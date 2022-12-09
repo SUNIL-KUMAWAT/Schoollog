@@ -23,7 +23,7 @@ const WhoAre = () => {
                 <Flex mt={4} align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
                     <Flex direction={{ base: 'column', md: 'row' }} p={5} align={'center'}
                         borderRadius={'20px'} w={{ base: '100%', md: '100%' }} >
-                        <Box w={{ base: '180px', lg: '550px' }}>
+                        <Box w={{ base: '180px',md:'550px',  lg: '550px' }}>
                             <Img src='/smleft.png' alt="" width={'100%'}  objectFit={'contain'} />
                         </Box>
                         <Box align={'center'} >
@@ -41,7 +41,7 @@ const WhoAre = () => {
                                 The <strong> Schoollog  </strong>way is a promise of nourishment for your brand!
                             </Text>
                         </Box>
-                        <Box w={{ base: '180px', lg: '550px' }}><Img src='/wrwright.png'
+                        <Box w={{ base: '180px',md:'550px', lg: '550px' }}><Img src='/wrwright.png'
                             alt="" width={'100%'} objectFit={'contain'} />
                         </Box>
                     </Flex>
