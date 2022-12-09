@@ -35,7 +35,8 @@ const DrawerMenu = () => {
   const router = useRouter();
   const headerTitle = [
     { id: '/', title: 'Home', },
-    { id: "/#AboutUs", title: 'About Us', },
+    // { id: "/#AboutUs", title: 'About Us', },
+    { id: "https://schoollog.in/", target: '_blank', title: 'About Us', },
     { id: 2, title: 'Our Services', },
     { id: "/#ourclient", title: 'Our Client', },
     { id: "/Testimonials", title: 'Testimonials', },
@@ -159,7 +160,7 @@ const DrawerMenu = () => {
           </DrawerFooter>
           <HStack ml={6}>
             <AiOutlineCopyrightCircle fontSize={12} color={'#ff214f'} />
-            <Text fontSize={10}>  <b>Schoollog All</b>
+            <Text fontSize={10}>  <b>Schoollog All </b>
               RIGHTS RESERVED
             </Text>
           </HStack>

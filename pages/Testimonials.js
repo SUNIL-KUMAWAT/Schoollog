@@ -9,38 +9,39 @@ const Testimonials = () => {
     const testimonial = [
         {
             image: 'https://bit.ly/dan-abramov',
-            Comments: 'We appreciated madison/miles media&nbsp;s flexibility and attention to detail throughout the process of designing and developing our new website. m3 was consistently dedicated to problem-solving and successfully delivering the features we requested.',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Director of Marketing, Eastern Dental'
+            Comments: 'Schoollog is a digital marketing company that produces successful strategies and campaigns for schools across the country. They help schools and educational institutes effectively communicate with their targeted audience and students through creative, authentic advertising. Contact them today to see how they can help your school!',
+            Name: 'RANJIT SINGH',
+            Position: 'Principal of Shemford Futuristic School(UP)'
         },
         {
             image: 'https://bit.ly/dan-abramov',
-            Comments: 'We appreciated madison/miles media&nbsp;s flexibility and attention to detail throughout the process of designing and developing our new website. m3 was consistently dedicated to problem-solving and successfully delivering the features we requested.',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Director of Marketing, Eastern Dental'
+            Comments: 'Working with Schoollog Digital Marketing Team was easy, the team took care of our requirements and helped promote our School in the way we wanted it projected to our targeted audience. Friendly efficient staff.',
+            Name: 'SUNIL DANGI',
+            Position: 'Chairman of MD Group of Education, Chirawa'
         },
         {
             image: 'https://bit.ly/dan-abramov',
-            Comments: 'We appreciated madison/miles media&nbsp;s flexibility and attention to detail throughout the process of designing and developing our new website. m3 was consistently dedicated to problem-solving and successfully delivering the features we requested.',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Director of Marketing, Eastern Dental'
+            Comments: 'We have been associated with Schoollog for over 4 years. During this period, they have showcased great creativity and astute knowledge of cleverly harnessing the social-media potential to fit the needs of our school. They have diligently worked with us to create tailored campaigns and have propelled our digital marketing to the next level. We recommend Schoollog Digital Marketing services for schools looking to enhance their social media presence.',
+            Name: 'SAGARMAL LADDHA',
+            Position: 'Chairman of Times Group of Institutions (Hanumangarh)'
         },
         {
             image: 'https://bit.ly/dan-abramov',
-            Comments: 'We appreciated madison/miles media&nbsp;s flexibility and attention to detail throughout the process of designing and developing our new website. m3 was consistently dedicated to problem-solving and successfully delivering the features we requested.',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Director of Marketing, Eastern Dental'
+            Comments: 'When it comes to digital marketing here in Sikar I had a lot of questions in my mind, how I am going to promote my coaching through social media, and whom I should approach for that. Here people are not much aware of my coaching institute I had to educate them first. Team Schoollog helped me to get through this and made my job easy. With their innovative ideas and perfect promotion strategy, They managed to coordinate the whole campaigns all the way from Jaipur. It helped me and my coaching institute a lot. I should thank Abhishek Singh and his team for always being there for help in all emergencies',
+            Name: 'VIKAS BURDAK',
+            Position: 'Director of Prayas Coaching, Sikar'
         },
     ]
 
     return <Box id={'testimonials'} align={'center'}>
-        <Box w={'100%'} ><Img src='/nav.jpg' alt="" width={'100%'} h={'100%'} objectFit={'contain'} />  </Box>
+        <Box w={'100%'} ><Img src='/06.png' alt="" width={'100%'} h={'100%'} objectFit={'contain'} />  </Box>
         <Text fontWeight={'hairline'} fontSize={'40px'} mt={'20px'} style={{ wordSpacing: '2px', letterSpacing: '2px' }}>
             Testimonials
         </Text>
-        <Text mt={'30px'} fontWeight='hairline' fontSize={{ base: '24px', lg: '30px' }} mx={{ base: '10px', md: '100px', lg: '200px' }}>
-            The right feedbacks help us grow. The kind compliments keep us motivated.
-            At the end of the day, the words from our clients matter the most!
+        <Text mt={'30px'} fontFamily={"['Montserrat, sans-serif']"} fontWeight='hairline'
+         fontSize={{ base: '24px', lg: '30px' }} mx={{ base: '10px', md: '100px', lg: '200px' }}>
+            The  <strong> right feedbacks help </strong> us grow. The <strong> kind compliments </strong> keep us motivated.
+            At the end of the day, the <strong> words from our clients matter </strong> the <strong> most! </strong>
         </Text>
 
         {testimonial.map((d, index) => (<>

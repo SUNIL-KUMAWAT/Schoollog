@@ -18,7 +18,7 @@ const AboutUsPage = () => {
 
     return (
         <>
-            <Box mx={'5%'} id={'AboutUs'} Page >
+            <Box  id={'AboutUs'} Page bgColor={'white'} >
                 <Heading as={'h1'}>About Us</Heading>
 
                 <Flex mt={5} mx={'5%'} gap={3} justifyContent="center" align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
