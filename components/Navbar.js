@@ -10,15 +10,15 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const Navbar = () => {
 
   const items = [
-    <Box key="1" w={'100%'} h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={'cover'}  bgImage={{base:'url("/0001.png")',md:'url("/001.png")'}} backgroundRepeat={'no-repeat'}>
+    <Box key="1" w={'100%'} h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={{base:'400px 220px ',md:'100vw 100%'}}  bgImage={{base:'url("/0001.png")',md:'url("/001.png")'}} backgroundRepeat={'no-repeat'}>
     </Box>,
-    <Box key="2" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={'cover'} bgImage={{base:'url("/0002.png")',md:'url("/002.png")'}} backgroundRepeat={'no-repeat'}>
+    <Box key="2" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0002.png")',md:'url("/002.png")'}} backgroundRepeat={'no-repeat'}>
     </Box>,
-    <Box key="3" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={'cover'}  bgImage={{base:'url("/0003.png")',md:'url("/003.png")'}} backgroundRepeat={'no-repeat'}>
+    <Box key="3" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}}  bgImage={{base:'url("/0003.png")',md:'url("/003.png")'}} backgroundRepeat={'no-repeat'}>
     </Box>,
-    <Box key="4" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={'cover'} bgImage={{base:'url("/0004.png")',md:'url("/004.png")'}} backgroundRepeat={'no-repeat'}>
+    <Box key="4" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0004.png")',md:'url("/004.png")'}} backgroundRepeat={'no-repeat'}>
     </Box>,
-    <Box key="5" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={'cover'} bgImage={{base:'url("/0005.png")',md:'url("/005.png")'}} backgroundRepeat={'no-repeat'}>
+    <Box key="5" h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0005.png")',md:'url("/005.png")'}} backgroundRepeat={'no-repeat'}>
        {/* <Image objectFit={'cover'} position={'absolute'} maxH={'400px'} minH={'220px'} w={'100%'} zIndex={-1} className="item" data-value="1" src='/main002.png' alt="" role="presentation" />  */}
     </Box>,
     // <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='01.png' key="2" alt="" role="presentation" />,
