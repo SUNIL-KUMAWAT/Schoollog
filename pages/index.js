@@ -22,6 +22,7 @@ import Icons from '../components/Icons'
 import BoxDesign from '../components/BoxDesign'
 import WhoAre from '../components/WhoAre'
 import Header from '../components/Header'
+import CarouselMinimal from '../components/CarouselMinimal'
 
 export default function Home() {
   return (
@@ -42,6 +43,7 @@ export default function Home() {
       </Head>
       {/* <Icons/> */}
        <Navbar /> 
+       {/* <CarouselMinimal/> */}
        {/* <AboutUs/> */}
        {/* <BoxDesign/> */}
        {/* <WhoAreWe/> */}

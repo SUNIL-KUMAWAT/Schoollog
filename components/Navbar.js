@@ -10,31 +10,46 @@ import "react-alice-carousel/lib/alice-carousel.css";
 const Navbar = () => {
 
   const items = [
-    <Box key="1" w={'100%'} h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={{base:'400px 220px ',md:'100vw 100%'}}  bgImage={{base:'url("/0001.png")',md:'url("/001.png")'}} backgroundRepeat={'no-repeat'}>
-    </Box>,
-    <Box key="2" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0002.png")',md:'url("/002.png")'}} backgroundRepeat={'no-repeat'}>
-    </Box>,
-    <Box key="3" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}}  bgImage={{base:'url("/0003.png")',md:'url("/003.png")'}} backgroundRepeat={'no-repeat'}>
-    </Box>,
-    <Box key="4" h={{ base: '220px', md: '300px', lg: '400px' }}  backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0004.png")',md:'url("/004.png")'}} backgroundRepeat={'no-repeat'}>
-    </Box>,
-    <Box key="5" h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0005.png")',md:'url("/005.png")'}} backgroundRepeat={'no-repeat'}>
-       {/* <Image objectFit={'cover'} position={'absolute'} maxH={'400px'} minH={'220px'} w={'100%'} zIndex={-1} className="item" data-value="1" src='/main002.png' alt="" role="presentation" />  */}
-    </Box>,
-    // <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='01.png' key="2" alt="" role="presentation" />,
-    // <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='/02.png' key="3" alt="" role="presentation" />,
-    //     <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='03.png' key="4" alt="" role="presentation" />,
-    // <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='/04.png' key="5" alt="" role="presentation" />,
-    // <Image w={'100%'} maxH={'600px'} minH={'220px'} zIndex={-1} className="item" data-value="2" src='/05.png' key="6" alt="" role="presentation" />,
+    // <Box key="1" w={'100%'}
+    //  h={{ base: '220px', md: '300px', lg: '400px' }} 
+    //  backgroundSize={'100%'} 
+    //   bgImage={{base:'url("/0001.png")',md:'url("/001.png")'}} 
+    //   backgroundRepeat={'no-repeat'}>
+    // </Box>,
+    // <Box key="2" h={{ base: '220px', md: '300px', lg: '400px' }} 
+    //  backgroundSize={'100%'}  
+    //  bgImage={{base:'url("/0002.png")',md:'url("/002.png")'}} 
+    //  backgroundRepeat={'no-repeat'}>
+    // </Box>,
+    // <Box key="3" h={{ base: '220px', md: '300px', lg: '400px' }}
+    //   backgroundSize={'100%'} 
+    //    bgImage={{base:'url("/0003.png")',md:'url("/003.png")'}}
+    //     backgroundRepeat={'no-repeat'}>
+    // </Box>,
+    // <Box key="4" h={{ base: '220px', md: '300px', lg: '400px' }}
+    //   backgroundSize={'100%'}
+    //    bgImage={{base:'url("/0004.png")',md:'url("/004.png")'}} 
+    //    backgroundRepeat={'no-repeat'}>
+    // </Box>,
+    // <Box key="5" h={{ base: '220px', md: '300px', lg: '400px' }} backgroundSize={{base:'400px 220px ',md:'100vw 100%'}} bgImage={{base:'url("/0005.png")',md:'url("/005.png")'}} backgroundRepeat={'no-repeat'}>
+    //    {/* <Image objectFit={'cover'} position={'absolute'} maxH={'400px'} minH={'220px'} w={'100%'} zIndex={-1} className="item" data-value="1" src='/main002.png' alt="" role="presentation" />  */}
+    // </Box>,
+    // <Image w={'100%'} maxH={'600px'} objectFit='cover' minH={'180px'} zIndex={-1} className="item" data-value="2" src={{base:'./0001.png', md:'./001.png',lg:'./001.png'}} key="2" alt="" role="presentation" />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./001.png' key="1" alt=""  />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./002.png' key="2" alt=""  />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./003.png' key="3" alt=""  />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./004.png' key="4" alt=""  />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./005.png' key="5" alt=""  />,
+   
   ];
 
   return (
     <Box >
       <Box>
-        <AliceCarousel  paddingLeft keyboardNavigation disableButtonsControls autoPlay
+        <AliceCarousel keyboardNavigation disableButtonsControls autoPlay infinite     
            autoPlayInterval={3000} 
-           animationDuration={1000} infinite
-          mouseTracking items={items} />
+           animationDuration={1000} 
+           mouseTracking items={items} />
       </Box>
       {/* <Box w={'100%'} h={'20px'}>
         <Img  objectFit={'cover'} src='./dmlogo.jpg'></Img>
