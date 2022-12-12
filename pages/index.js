@@ -27,15 +27,6 @@ import CarouselMinimal from '../components/CarouselMinimal'
 export default function Home() {
   return (
     <Box className={styles.container}
-    style={{
-      // backgroundImage: `url(bg8.jpg)`,
-      width: '100%',
-      // height: '100%',
-      backgroundSize: 'cover',
-      backgroundRepeat: 'no-repeat',
-      backgroundAttachment:'fixed'
-  
-    }}
    >
       <Head>
         <title>Digital marketing</title>

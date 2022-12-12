@@ -1,11 +1,9 @@
 
-import { Box, Flex, HStack, Image, Img, Spacer, Text } from "@chakra-ui/react";
+import { Box, Flex, HStack, Image, Img, LinkBox, Spacer, Text } from "@chakra-ui/react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
-
-
 
 const Navbar = () => {
 
@@ -35,21 +33,36 @@ const Navbar = () => {
     //    {/* <Image objectFit={'cover'} position={'absolute'} maxH={'400px'} minH={'220px'} w={'100%'} zIndex={-1} className="item" data-value="1" src='/main002.png' alt="" role="presentation" />  */}
     // </Box>,
     // <Image w={'100%'} maxH={'600px'} objectFit='cover' minH={'180px'} zIndex={-1} className="item" data-value="2" src={{base:'./0001.png', md:'./001.png',lg:'./001.png'}} key="2" alt="" role="presentation" />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./001.png' key="1" alt=""  />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./002.png' key="2" alt=""  />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./003.png' key="3" alt=""  />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./004.png' key="4" alt=""  />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'}  objectFit={{base:'contain',md:'cover',lg:'cover'}}  zIndex={-1}   src='./005.png' key="5" alt=""  />,
-   
+      <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./001.png' key="1" alt="" />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./002.png' key="2" alt="" />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./003.png' key="3" alt="" />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./004.png' key="4" alt="" />,
+    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./005.png' key="5" alt="" />,
+
   ];
 
   return (
-    <Box >
-      <Box>
-        <AliceCarousel keyboardNavigation disableButtonsControls autoPlay infinite     
-           autoPlayInterval={3000} 
-           animationDuration={1000} 
-           mouseTracking items={items} />
+    <Box   style={{
+      backgroundImage: `url(bg8.jpg)`,
+      width: '100%',
+      // height: '100%',
+      backgroundSize: 'cover',
+      backgroundRepeat: 'no-repeat',
+      backgroundAttachment:'fixed'
+    }}>
+      <Box  bgColor={'white'} >
+        <AliceCarousel keyboardNavigation
+          // disableDotsControls
+          keysControlDisabled
+          // disableSlideInfo={false}
+          mouseDragEnabled={true}
+          autoPlayDirection="ltr"
+          disableButtonsControls
+          autoPlay
+          infinite
+          autoPlayInterval={3000}
+          animationDuration={1000}
+          mouseTracking items={items} />
       </Box>
       {/* <Box w={'100%'} h={'20px'}>
         <Img  objectFit={'cover'} src='./dmlogo.jpg'></Img>
@@ -60,7 +73,8 @@ const Navbar = () => {
         // bgImage='url("./dmlogo.jpg")'
         // backgroundSize={'contain'}
         opacity={.91}
-
+      
+        mt={'-5px'}
       // borderLeft={{base:'10px solid #FFFF00',lg:'40px solid #FFFF00'}}
       // borderRight={{base:'10px solid #FFFF00',lg:'40px solid #FFFF00'}}
       >
