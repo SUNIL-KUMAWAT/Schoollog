@@ -31,7 +31,7 @@ const Navbar = () => {
   return (
     <Box >
       <Box w={'100%'} >
-        <AliceCarousel  paddingLeft keyboardNavigation disableButtonsControls disableDotsControls autoPlay
+        <AliceCarousel  paddingLeft keyboardNavigation disableButtonsControls autoPlay
            autoPlayInterval={3000} 
            animationDuration={1000} infinite
           mouseTracking items={items} />
