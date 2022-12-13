@@ -7,18 +7,32 @@ const StudentForm = () => {
     const [show, setShow] = useState(false);
     const [value, setValue] = useState('');
     const handleClick = () => setShow(!show);
-    const [isChecked, setIsChecked] = useState(false);
+    const [isChecked, setIsChecked] = useState(true);
     const [data, setData] = useState();
     const [regForm, setRegForm] = useState([]);
+    const [subjects, setSubjects] = useState([])
+    // const onChangeHandleSubject = (value,keyData)=>{
+    //     setSubjects(d=>({            
+    //         [keyData]: value,
+    //         ...d
+    // }))
+    //     setIsChecked(isChecked);
+    //  console.log(subjects)
+    // }
     
     const onChangeHandle = (value,keyData) => {
-        setIsChecked(!isChecked);
+       if(!isChecked && keyData === 'Subjects'){
+         setSubjects(d=>([...d,value]))
+       }
+       console.log('subjects',subjects);      
         setData(d => ({
             ...d,
+            subjects: subjects,
             id: Math.random(),
             [keyData]: value
         }));
-        setIsChecked(isChecked);
+        setIsChecked(!isChecked);
+       console.log('data',data);
     }
 
     const addStudent = useStudentStore((state) => state.addStudent)
@@ -29,11 +43,10 @@ const StudentForm = () => {
             ...regForm,
             data
         ])    
-        addStudent(data);        
+        addStudent(data);  
+        console.log('regForm',regForm);      
     }
-   
-    
-     
+       
     return <Box>
         <Flex width="full" align="center" justifyContent="center">
             <Box p={2}>
@@ -75,13 +88,13 @@ const StudentForm = () => {
                         <FormControl mt={2}>
                             <FormLabel>Subjects:</FormLabel>
                             <Stack spacing={4} direction='row'>
-                                <Checkbox value={regForm.Physics} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Physics','Physics'): onChangeHandle('','Physics')}>
+                                <Checkbox value={regForm.Physics} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Physics','Subjects'): onChangeHandle('','Subjects')}>
                                     Physics
                                 </Checkbox>
-                                <Checkbox value={regForm.Chemistry} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Chemistry','Chemistry'): onChangeHandle('','Chemistry')}>
+                                <Checkbox value={regForm.Chemistry} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Chemistry','Subjects'): onChangeHandle('','Subjects')}>
                                     Chemistry
                                 </Checkbox>
-                                <Checkbox value={regForm.Math} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Math','Math'): onChangeHandle('','Math')}>
+                                <Checkbox value={regForm.Math} checked={isChecked} onChange={(e)=> !isChecked ? onChangeHandle('Math','Subjects'): onChangeHandle('','Subjects')}>
                                     Math
                                 </Checkbox>
                             </Stack>
