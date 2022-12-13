@@ -135,7 +135,7 @@ const DrawerMenu = () => {
                       services.map((List, index) => {
                         return <Flex fontFamily={"['Montserrat, sans-serif']"}
                           key={index} pl={5} _hover={{ color: '#ff214f', textDecoration: 'underline' }}>
-                          <Link style={{ fontSize: '18px' }} href={List?.id} passHref _hover={{ color: '#ff214f' }} >{List.title}</Link>
+                          <Link onClick={onclose} style={{ fontSize: '18px' }} href={List?.id} passHref _hover={{ color: '#ff214f' }} >{List.title}</Link>
                         </Flex>
                       })
                       : null

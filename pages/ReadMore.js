@@ -1,7 +1,9 @@
 import { Box, Button, Img, Text } from "@chakra-ui/react";
 import Link from "next/link";
+import BreakDesign from "../components/BreakDesign";
 import CorePeople from "../components/CorePeople";
 import Footer from "../components/Footer";
+// import BreakDesign from "./components/BreakDesign"
 
 const ReadMore = () => {
     return (<Box
@@ -15,11 +17,11 @@ const ReadMore = () => {
 
         }}
     >
-        <Box bg={'white'}>
+        <Box bg={'white'} pb={'30px'}>
             <Box w={'100%'} ><Img src='/nav.jpg' alt="" width={'100%'} h={'100%'} objectFit={'contain'} />  </Box>
             <Text align={'center'} letterSpacing={'1px'} my={'30px'} fontSize={'34'} color={'gray.500'} style={{ letterSpacing: '1px' }} fontFamily={"['Montserrat, sans-serif']"} fontWeight={'hairline'}>About Us</Text>
             <Box align='center'>
-                <Img src="schoollog.png" w={{ base: '200px', md: '260', lg: '300px' }} ></Img>
+                <Img src="schoollogo.png" w={{ base: '200px', md: '260', lg: '300px' }} ></Img>
             </Box>
             <Text align={'center'} lineHeight={'40px'} fontFamily="['Montserrat, sans-serif']" color={'#33334d'} mt={'10px'} fontSize={{ base: '25', lg: '30' }} >
                 &ldquo;A
@@ -62,13 +64,14 @@ const ReadMore = () => {
                 Here&apos;s to more challenges!
             </Text>
             <Text mx={{ base: '20px', md: '80px', lg: '178px' }} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'20px'} >
-                And to more<b>watermelon magic!</b>
+                And to more <b> schoollog magic!</b>
             </Text>
         </Box>
-        <Box bg={'white'} mt={'300px'}>
-            <Box align='center' pt={'50px'} >
+        <BreakDesign/>
+        <Box bg={'white'}  pt={'50px'}>
+            {/* <Box align='center' pt={'50px'} >
                 <Img src="schoollog.png" w={{ base: '200px', md: '260', lg: '300px' }} ></Img>
-            </Box>
+            </Box> */}
             <Text mx={{ base: '20px', md: '80px', lg: '178px' }} mt={'20px'} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'30px'} >
                 <b>Mission </b> & <b> Vission</b>
             </Text>
