@@ -113,7 +113,7 @@ const DrawerMenu = () => {
                 // eslint-disable-next-line react/jsx-key
                 return <>
                   {index == 2 ?
-                    <Text textAlign='left' cursor={'pointer'} _hover={{ color: '#ff214f' }}
+                    <Text key={index} textAlign='left' cursor={'pointer'} _hover={{ color: '#ff214f' }}
                       fontSize={'20px'} onClick={dropDownServices}  >
                       {list.title}
                       {dropDown === true ?
@@ -123,7 +123,7 @@ const DrawerMenu = () => {
                       }
                     </Text>
                     :
-                    <Text textAlign='left' _hover={{ color: '#ff214f' }} mt={'35px'}
+                    <Text key={index} textAlign='left' _hover={{ color: '#ff214f' }} mt={'35px'}
                       fontSize={'20px'} fontFamily={"['Montserrat, sans-serif']"}
                       color={router.pathname === list.id ? "red.300" : "gray.700"}
                       cursor={'pointer'}>

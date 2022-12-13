@@ -1,5 +1,5 @@
 import { Box, Button, Table, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react';
-import React, {useReducer, useState } from 'react';  
+import React, {useEffect, useReducer, useState } from 'react';  
 
 
 import {
@@ -50,11 +50,26 @@ const columns = [
     header: 'Phone',
     // footer: info => info.column.id,
   }),
+  columnHelper.accessor('Subject', {
+    header: 'Subject',
+    // footer: info => info.column.id,
+  }),
+  columnHelper.accessor('Date', {
+    header: 'Date',
+    // footer: info => info.column.id,
+  }),
+  columnHelper.accessor('Country', {
+    header: 'Country',
+    // footer: info => info.column.id,
+  }),
 ]
 
 const FormTable = () => {
     const students = useStudentStore((state => state.students))
-  const [data, setData] = useState(() => [...students])
+    useEffect(()=>{
+      
+    },[])
+  const [data, setData] = useState(()=>[...students])
   console.log(students)
   console.log(data)
   const rerender = useReducer(() => ({}), {})[1]
@@ -95,22 +110,6 @@ const FormTable = () => {
             </Tr>
           ))}
         </Tbody>
-        {/* <Tfoot>
-          {table.getFooterGroups().map(footerGroup => (
-            <Tr key={footerGroup.id}>
-              {footerGroup.headers.map(header => (
-                <Th key={header.id}>
-                  {header.isPlaceholder
-                    ? null
-                    : flexRender(
-                        header.column.columnDef.footer,
-                        header.getContext()
-                      )}
-                </Th>
-              ))}
-            </Tr>
-          ))}
-        </Tfoot> */}
       </Table>
       <Box className="h-4" />
       <Button onClick={() => rerender()} className="border p-2">
