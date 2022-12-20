@@ -50,24 +50,7 @@ const Navbar = () => {
       backgroundRepeat: 'no-repeat',
       backgroundAttachment:'fixed'
     }}>
-      <Box  bgColor={'white'} >
-        <AliceCarousel keyboardNavigation
-          // disableDotsControls
-          keysControlDisabled
-          // disableSlideInfo={false}
-          mouseDragEnabled={true}
-          autoPlayDirection="ltr"
-          disableButtonsControls
-          autoPlay
-          infinite
-          autoPlayInterval={3000}
-          animationDuration={1000}
-          mouseTracking items={items} />
-      </Box>
-      {/* <Box w={'100%'} h={'20px'}>
-        <Img  objectFit={'cover'} src='./dmlogo.jpg'></Img>
-      </Box> */}
-      <Box align='center' bgColor={'White'}
+     <Box align='center' bgColor={'White'}
         borderTop={'5px solid #FFFF00'}
         borderBottom={'0px solid yellow '}
         // bgImage='url("./dmlogo.jpg")'
@@ -97,6 +80,24 @@ const Navbar = () => {
           <strong> We Provide Complete Digital Marketing Solutions</strong>
         </Text>
       </Box>
+      <Box  bgColor={'white'} >
+        <AliceCarousel keyboardNavigation
+          // disableDotsControls
+          keysControlDisabled
+          // disableSlideInfo={false}
+          mouseDragEnabled={true}
+          autoPlayDirection="ltr"
+          disableButtonsControls
+          autoPlay
+          infinite
+          autoPlayInterval={3000}
+          animationDuration={1000}
+          mouseTracking items={items} />
+      </Box>
+      {/* <Box w={'100%'} h={'20px'}>
+        <Img  objectFit={'cover'} src='./dmlogo.jpg'></Img>
+      </Box> */}
+     
     </Box>
   )
 }
