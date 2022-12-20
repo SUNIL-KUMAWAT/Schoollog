@@ -1,6 +1,7 @@
 import create from "zustand";
 
- export const useStudentStore =create((set, get) => ({
+
+export const useStudentStore = create((set, get) => ({
   students: [],
   addStudent: (student) => {
     const students = get().students;
@@ -8,6 +9,15 @@ import create from "zustand";
       students: ([student, ...students])
     })
   },
+  removeStudent: (id) =>
+    set(state => ({
+      students: state.students.filter(student => student.id !== id)
+    })),
+    studentData:{},
+  updateStudent: (data) =>
+    set({
+      studentData: (data)
+    }),
 
 }));
 
@@ -67,3 +77,23 @@ import create from "zustand";
 //   useCallback(state => state.students.find(s => s.id === studentId),
 //   [studentId])
 // );
+
+
+// updateStudent: student =>
+// set(state => ({
+//   students: state.students.map(item => {
+//     if (item.id === student.id) {
+//       return {
+//         ...item,
+//         Name: student.Name,
+//         Father: student.Father,
+//         id: student.id,
+//         Phone:student.Phone,
+//         Email:student.Email,
+//         Country:student.Country,
+//       };
+//     } else {
+//       return item;
+//     }
+//   })
+// }))
