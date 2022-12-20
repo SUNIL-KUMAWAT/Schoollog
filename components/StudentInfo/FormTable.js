@@ -1,7 +1,6 @@
 import { Box, Button, Table, Tbody, Td, Tfoot, Th, Thead, Tr } from '@chakra-ui/react';
 import React, {useEffect, useReducer, useState } from 'react';  
 
-
 import {
     ColumnDef,
   createColumnHelper,
@@ -31,47 +30,41 @@ const columns = [
     id: 'Father',
     cell: info => <i>{info.getValue()}</i>,
     header: () => <span>Father</span>,
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Address', {
     header: () => 'Address',
     cell: info => info.renderValue(),
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Gender', {
     header: () => <span>Gender</span>,
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Email', {
     header: 'Email',
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Phone', {
     header: 'Phone',
-    // footer: info => info.column.id,
   }),
-  columnHelper.accessor('Subject', {
+  columnHelper.accessor('Subjects', {
     header: 'Subject',
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Date', {
     header: 'Date',
-    // footer: info => info.column.id,
   }),
   columnHelper.accessor('Country', {
     header: 'Country',
-    // footer: info => info.column.id,
   }),
+  // columnHelper.accessor('Action', {
+  //   header: 'Action',
+  // }),
 ]
 
 const FormTable = () => {
     const students = useStudentStore((state => state.students))
+    const [data, setData] = useState(()=>[...students])
     useEffect(()=>{
-      
-    },[])
-  const [data, setData] = useState(()=>[...students])
-  console.log(students)
-  console.log(data)
+      setData(()=>[...students])
+    },[students])
+
   const rerender = useReducer(() => ({}), {})[1]
 
   const table = useReactTable({
@@ -79,6 +72,20 @@ const FormTable = () => {
     columns,
     getCoreRowModel: getCoreRowModel(),
   })
+
+  const removeStudent = useStudentStore(state => state.removeStudent);
+  const updateStudent = useStudentStore(state => state.updateStudent);
+
+
+  const handleDelete = id => {
+  removeStudent(id);
+};
+const handleUpdate = data =>{
+      updateStudent(data);
+};
+
+
+
 
   return (
     <Box className="p-2">
@@ -96,6 +103,7 @@ const FormTable = () => {
                       )}
                 </Th>
               ))}
+              <Th>Action</Th>
             </Tr>
           ))}
         </Thead>
@@ -107,6 +115,8 @@ const FormTable = () => {
                   {flexRender(cell.column.columnDef.cell, cell.getContext())}
                 </Td>
               ))}
+              <Td><Button onClick={(e)=>handleDelete(row.original.id)}>Remove</Button>
+              <Button onClick={(e) => handleUpdate(row.original)}>Update</Button></Td>
             </Tr>
           ))}
         </Tbody>
@@ -220,3 +230,36 @@ export default FormTable;
 //     }),
 //   ]
   
+
+// const [modalOpen, setModalOpen] = useState(false);
+// const [modalData, setModalData] = useState(null);
+
+// const handleModalClose = response => {
+//   setModalOpen(false);
+//   if (response) {
+//     console.log(response);
+//     if (response.id) {
+//       updateStudent({
+//         Name: response.Name,
+//         Father: response.Father,
+//         id: response.id,
+//         Phone:response.Phone,
+//         Email:response.Email,
+//         Country:response.Country,
+//         id:response.id,
+//       });
+//     } else {
+//       addStudent({  Name: response.Name,
+//         Father: response.Father,
+//         id: response.id,
+//         Phone:response.Phone,
+//         Email:response.Email,
+//         Country:response.Country,});
+//     }
+//   }
+//   modalData && setModalData(null);
+// };
+// const editItem = item => {
+//   setModalData(item);
+//   setModalOpen(true);
+// };
