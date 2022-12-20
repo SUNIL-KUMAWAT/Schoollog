@@ -33,11 +33,11 @@ const Navbar = () => {
     //    {/* <Image objectFit={'cover'} position={'absolute'} maxH={'400px'} minH={'220px'} w={'100%'} zIndex={-1} className="item" data-value="1" src='/main002.png' alt="" role="presentation" />  */}
     // </Box>,
     // <Image w={'100%'} maxH={'600px'} objectFit='cover' minH={'180px'} zIndex={-1} className="item" data-value="2" src={{base:'./0001.png', md:'./001.png',lg:'./001.png'}} key="2" alt="" role="presentation" />,
-      <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./001.png' key="1" alt="" />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./002.png' key="2" alt="" />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./003.png' key="3" alt="" />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./004.png' key="4" alt="" />,
-    <Image w={'100%'} mt={'10px'} maxH={'380px'} objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./005.png' key="5" alt="" />,
+      <Image w={'100%'} mt={'10px'}  objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./001.png' key="1" alt="" />,
+    <Image w={'100%'} mt={'10px'}  objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./002.png' key="2" alt="" />,
+    <Image w={'100%'} mt={'10px'}  objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./003.png' key="3" alt="" />,
+    <Image w={'100%'} mt={'10px'}  objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./004.png' key="4" alt="" />,
+    <Image w={'100%'} mt={'10px'}  objectFit={{ base: 'contain', md: 'cover', lg: 'cover' }} zIndex={-1} src='./005.png' key="5" alt="" />,
 
   ];
 
