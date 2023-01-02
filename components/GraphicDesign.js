@@ -36,6 +36,7 @@ const GraphicDesign = () => {
                         </Box>
                     </Flex>
                 </Flex>
+                
                 <Box align='center' mb={'30px'}>
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} border={'1px solid gray'}
                         size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'}
