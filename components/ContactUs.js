@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Heading, HStack, Button, Center, Img } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Img } from "@chakra-ui/react";
 import Link from "next/link";
 
 const ContactUs = () => {
@@ -13,11 +13,11 @@ const ContactUs = () => {
                             <Img ml={{ base: '10px', md: '-10px', lg: '40px' }}
                                 src='/cright.png' alt="" width={'100%'} h={'100%'} objectFit={'contain'} />
                         </Box>
-                        <Box align={'center'} w={{ base: '100%', md: '90%',lg:'90%' }}>
+                        <Box align={'center'} w={{ base: '100%', md: '90%', lg: '90%' }}>
                             <Text fontFamily={"['Montserrat, sans-serif']"} lineHeight={'40px'} ml={{ base: '10px', md: '10px' }}
                                 align={{ base: 'center', md: 'left' }} style={{ letterSpacing: '0px', wordSpacing: '1px' }}
                                 color={'#33334d'} mt={'10px'} fontSize={{ base: '24', lg: '30' }}
-                                w={{ base: '100%', md:'85%',lg: '62%' }}>Sometimes from the most <strong> twisty or stupid thought,
+                                w={{ base: '100%', md: '85%', lg: '62%' }}>Sometimes from the most <strong> twisty or stupid thought,
                                 </strong> sometimes <strong>simply out of commonsense,</strong> we bring out the <strong>best ideas </strong>
                                 from our brains! It&apos;s all about<strong> brainstorming</strong> just to get the simplest thought!
                             </Text>

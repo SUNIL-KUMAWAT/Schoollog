@@ -3,7 +3,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Form from "../components/Form";
 
-
 const JoinTeam = () => {
     return <Box id={'jointeam'} align={'center'}>
         <Box w={'100%'} ><Img src='/nav.jpg' alt="" width={'100%'} h={'100%'} objectFit={'contain'} />  </Box>

@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Heading, HStack, Button, Center, Img } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Img } from "@chakra-ui/react";
 import Link from "next/link";
 
 const WhoAre = () => {

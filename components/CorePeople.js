@@ -79,7 +79,7 @@ const CorePeople = () => {
             </Text>
             <Divider w={{ base: '50px', md: '200px', lg: '200px' }} mt={'16px'} />
         </Flex>
-        <Wrap spacing={{base:'40px',md:'100px',lg:'120px'}}  my={{base:'20px',md:'40px',lg:'60px'}} justify={'center'}>
+        <Wrap spacing={{ base: '40px', md: '100px', lg: '120px' }} my={{ base: '20px', md: '40px', lg: '60px' }} justify={'center'}>
             {Gallery.map((e) => {
                 return (
                     <WrapItem key="{e.Name}">
@@ -98,7 +98,6 @@ const CorePeople = () => {
                 )
             })}
         </Wrap>
-
     </Box>
 }
 

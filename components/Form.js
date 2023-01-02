@@ -1,13 +1,11 @@
 import React, { useState } from "react";
-import { Box, Text, Input, Flex, Heading, FormControl, FormLabel, Button, InputGroup, InputLeftElement, Select, Textarea, InputRightElement, TagLabel, RadioGroup, Radio, Stack, Checkbox, background } from "@chakra-ui/react"
+import { Box, Input, Flex, FormControl, FormLabel, Button, InputGroup, InputLeftElement, Select, Textarea } from "@chakra-ui/react"
 import { PhoneIcon } from "@chakra-ui/icons";
-
 
 const Form = () => {
     const [value, setValue] = useState('');
     const [data, setData] = useState();
     const [regForm, setRegForm] = useState([]);
-
     const onChangeHandle = (value, keyData) => {
         setData(d => ({
             ...d,

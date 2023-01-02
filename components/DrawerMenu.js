@@ -1,35 +1,10 @@
-import { ChatIcon, ChevronDownIcon, ChevronUpIcon, EmailIcon, HamburgerIcon, PhoneIcon } from '@chakra-ui/icons';
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Button,
-  useDisclosure,
-  Flex,
-  VStack,
-  Text,
-  Box,
-  HStack,
-  color,
-} from '@chakra-ui/react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-} from '@chakra-ui/react'
-
+import { ChevronDownIcon, ChevronUpIcon, EmailIcon, HamburgerIcon, PhoneIcon } from '@chakra-ui/icons';
+import {Drawer,DrawerBody,DrawerFooter, DrawerOverlay, DrawerContent,DrawerCloseButton, Button, useDisclosure, Flex, VStack, Text, Box, HStack,} from '@chakra-ui/react'
 import { useRef, useState } from 'react'
-// import { AiOutlineWhatsApp } from '@chakra-ui/react'
-import { AiOutlineCopyrightCircle, AiOutlineMessage, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineCopyrightCircle, AiOutlineWhatsApp } from "react-icons/ai";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { FaLinkedinIn } from "react-icons/fa";
-
 
 const DrawerMenu = () => {
   const router = useRouter();
@@ -77,6 +52,12 @@ const DrawerMenu = () => {
 
   const dropDownServices = () => {
     setDropDown(d => !d)
+  }
+
+  const changeRoute = (id) => {
+    router.push(id)
+    onClose()
+
   }
 
   return (
@@ -127,7 +108,7 @@ const DrawerMenu = () => {
                       fontSize={'20px'} fontFamily={"['Montserrat, sans-serif']"}
                       color={router.pathname === list.id ? "red.300" : "gray.700"}
                       cursor={'pointer'}>
-                      <Link href={list?.id} passHref target={list.target} > {list.title}</Link>
+                      <Flex href={list?.id} passHref target={list.target} onClick={() => changeRoute(list?.id)} > {list.title}</Flex>
                     </Text>
                   }
                   {index === 2 ?
@@ -135,7 +116,7 @@ const DrawerMenu = () => {
                       services.map((List, index) => {
                         return <Flex fontFamily={"['Montserrat, sans-serif']"}
                           key={index} pl={5} _hover={{ color: '#ff214f', textDecoration: 'underline' }}>
-                          <Link onClick={onclose} style={{ fontSize: '18px' }} href={List?.id} passHref _hover={{ color: '#ff214f' }} >{List.title}</Link>
+                          <Flex style={{ fontSize: '18px' }} passHref _hover={{ color: '#ff214f' }} onClick={() => changeRoute(List?.id)} >{List.title}</Flex>
                         </Flex>
                       })
                       : null

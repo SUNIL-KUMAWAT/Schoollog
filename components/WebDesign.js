@@ -9,7 +9,7 @@ const WebDesign = () => {
                 <Flex align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
                     <Flex direction={{ base: 'column', md: 'row' }} p={5} align={'center'}
                         borderRadius={'20px'} w={{ base: '100%', md: '100%' }} >
-                        <Box  w={{ base: '180px', md: '300px',lg:'500px' }}><Img src='/wdleft.png'
+                        <Box w={{ base: '180px', md: '300px', lg: '500px' }}><Img src='/wdleft.png'
                             alt="" width={'100%'} h={'100%'} objectFit={'contain'} />
                         </Box>
                         <Box align={'center'} w={{ base: '100%', md: '100%' }}>
@@ -28,10 +28,9 @@ const WebDesign = () => {
                                 drive your targets in making a  <strong> BOOM in your business!</strong>
                             </Text>
                         </Box>
-                        <Box w={{ base: '180px', md: '300px',lg:'500px' }}>
-                            <Img src='/wdright.png' alt="" width={'100%'}  objectFit={'contain'} />
+                        <Box w={{ base: '180px', md: '300px', lg: '500px' }}>
+                            <Img src='/wdright.png' alt="" width={'100%'} objectFit={'contain'} />
                         </Box>
-                       
                     </Flex>
                 </Flex>
                 <Box align='center' mb={'50px'} >

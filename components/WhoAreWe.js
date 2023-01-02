@@ -7,7 +7,6 @@ const WhoAreWe = () => {
             data: 'Team of IITIANS',
             color: '#c8cae3',
             bg: 'backgroundImage: `url(digital700schools.jpg)`'
-
         },
         {
             data: 'Experience of working with leading edtech brands',
@@ -59,19 +58,3 @@ const WhoAreWe = () => {
 }
 
 export default WhoAreWe;
-
-
-
-// <Box fontSize={'32px'} fontFamily={'monospace'} color='forestgreen'
-//                                 bgGradient={[
-//                                     'linear(to-tr, teal.100, yellow.300)',
-//                                     'linear(to-t, blue.100, teal.100)',
-//                                     'linear(to-b, orange.100, purple.100)',
-//                                 ]} _hover={{ transform: 'scale(.95)', transition: '3s', bgGradient: 'linear(to-r, red.100, yellow.200)', color: 'black' }}
-//                                 shadow={'1px 1px 5px -1px'} p={5} align={'center'} borderRadius={'20px'}
-//                                 key={d.data} w={{ base: '100%', md: '100%' }} h={'250px'}
-//                                 // style={{backgroundImage: {d.backgroundImage}}
-//                                 >
-//                                {d.data}
-//                                <Image>
-//                             </Box>

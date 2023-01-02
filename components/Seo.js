@@ -1,4 +1,4 @@
-import { Box, Flex, Text, Heading, HStack, Button, Center, Img } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Img } from "@chakra-ui/react";
 import Link from "next/link";
 
 const Seo = () => {
@@ -31,9 +31,9 @@ const Seo = () => {
                     </Flex>
                 </Flex>
                 <Box align='center' mb={'50px'} >
-                    <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} 
-                    border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} 
-                    borderRadius={'20px'} px={'25px'} align='center'  >
+                    <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"}
+                        border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }}
+                        borderRadius={'20px'} px={'25px'} align='center'  >
                         <Link href="/ReadMore">READ MORE</Link>
                     </Button>
                 </Box>

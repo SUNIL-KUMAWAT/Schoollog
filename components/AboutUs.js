@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, HStack } from "@chakra-ui/react";
+import { Box, Flex,Heading } from "@chakra-ui/react";
 
 const AboutUsPage = () => {
     const about = [
@@ -18,9 +18,8 @@ const AboutUsPage = () => {
 
     return (
         <>
-            <Box  id={'AboutUs'} Page bgColor={'white'} >
+            <Box id={'AboutUs'} Page bgColor={'white'} >
                 <Heading as={'h1'}>About Us</Heading>
-
                 <Flex mt={5} mx={'5%'} gap={3} justifyContent="center" align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
                     {about.map(d => {
                         return (
@@ -34,5 +33,4 @@ const AboutUsPage = () => {
         </>
     );
 }
-
 export default AboutUsPage;

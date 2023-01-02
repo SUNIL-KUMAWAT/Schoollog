@@ -1,10 +1,9 @@
-import { EmailIcon, HamburgerIcon, PhoneIcon } from "@chakra-ui/icons";
-import { Box, Button, Flex } from "@chakra-ui/react";
+import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
+import { Button, Flex } from "@chakra-ui/react";
 import Link from "next/link";
 import { AiOutlineWhatsApp } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
 
-// cursor={'pointer'} style={{ padding: '8px', height: '32px', width: '32px', boxShadow: '0px 0px 8px blue', marginTop: '5px', backgroundColor: 'white' }}
 const Icons = () => {
     const links = [
         {
@@ -40,7 +39,6 @@ const Icons = () => {
         </Flex>
     );
 }
-
 export default Icons;
 
 

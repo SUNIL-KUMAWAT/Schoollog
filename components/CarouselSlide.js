@@ -1,6 +1,5 @@
-import { Box, Heading, Image } from "@chakra-ui/react";
+import { Box, Image } from "@chakra-ui/react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import AliceCarousel from 'react-alice-carousel';
 import "react-alice-carousel/lib/alice-carousel.css";
 
