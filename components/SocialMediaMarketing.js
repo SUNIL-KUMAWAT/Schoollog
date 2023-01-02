@@ -23,7 +23,7 @@ const SocialMediaMarketing = () => {
                 <Flex mt={4} align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
                     <Flex direction={{ base: 'column', md: 'row' }} p={5} align={'center'}
                         borderRadius={'20px'} w={{ base: '100%', md: '100%' }} >
-                        <Box w={{ base: '180px',md:'220px', lg: '550px' }}><Img src='/smmleft.png'
+                        <Box w={{ base: '180px', md: '220px', lg: '550px' }}><Img src='/smmleft.png'
                             alt="" width={'100%'} h={'100%'} objectFit={'contain'} />
                         </Box>
                         <Box align={'center'} w={'100%'}>
@@ -41,12 +41,12 @@ const SocialMediaMarketing = () => {
                                 & not making use of them would be a modern day sin
                             </Text>
                         </Box>
-                        <Box w={{ base: '180px',md:'220px', lg: '550px' }}><Img src='/mobilesmm.png'
+                        <Box w={{ base: '180px', md: '220px', lg: '550px' }}><Img src='/mobilesmm.png'
                             alt="" width={'100%'} objectFit={'contain'} />
                         </Box>
                     </Flex>
                 </Flex>
-                <Box align='center'  mb={'40px'} >
+                <Box align='center' mb={'40px'} >
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'} px={'25px'} align='center'  >
                         <Link href="/ReadMore">
                             READ MORE

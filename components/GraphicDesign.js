@@ -1,7 +1,5 @@
-import { Box, Flex, Text, Heading, HStack, Button, Center, Img } from "@chakra-ui/react";
+import { Box, Flex, Text, Button, Img } from "@chakra-ui/react";
 import Link from "next/link";
-import styles from '../styles/Home.module.css'
-// import '../styles/textDecoration.css'
 
 const GraphicDesign = () => {
     return (
@@ -10,7 +8,7 @@ const GraphicDesign = () => {
                 <Flex mt={4} align="center" flexDir={{ base: "column", md: "row", lg: 'row' }}>
                     <Flex direction={{ base: 'column', md: 'row' }} p={5} align={'center'} borderRadius={'20px'}
                         w={{ base: '100%', md: '100%' }} >
-                        <Box w={{ base: '160px', md: '200px',lg:'320px' }} ><Img src='/gdleft.png' alt="" width={'100%'}
+                        <Box w={{ base: '160px', md: '200px', lg: '320px' }} ><Img src='/gdleft.png' alt="" width={'100%'}
                             h={'100%'} objectFit={'contain'} />  </Box>
                         <Box align={'center'} w={{ base: '100%', md: '70%' }}>
                             <Text
@@ -24,7 +22,7 @@ const GraphicDesign = () => {
                                 style={{ letterSpacing: '0px', wordSpacing: '2px' }}
                                 fontFamily={"['Montserrat, sans-serif']"}
                                 mt={'40px'}
-                                fontSize={{ base: '25', md: '26',lg: '30' }}
+                                fontSize={{ base: '25', md: '26', lg: '30' }}
                                 w={{ base: '100%', lg: '70%' }}>
                                 Because <strong  >never underestimate </strong>
                                 the power of an <strong > attractive & well communicative image or design! </strong>
@@ -32,7 +30,7 @@ const GraphicDesign = () => {
                                 about visuals!
                             </Text>
                         </Box>
-                        <Box w={{ base: '160px', md: '200px',lg:'320px' }}>
+                        <Box w={{ base: '160px', md: '200px', lg: '320px' }}>
                             <Img src='/gdright.png' alt=""
                                 width={'100%'} h={'100%'} objectFit={'contain'} />
                         </Box>

@@ -3,14 +3,12 @@ import Link from "next/link";
 import BreakDesign from "../components/BreakDesign";
 import CorePeople from "../components/CorePeople";
 import Footer from "../components/Footer";
-// import BreakDesign from "./components/BreakDesign"
 
 const ReadMore = () => {
     return (<Box
         style={{
             backgroundImage: `url(nav.jpg)`,
             width: '100%',
-            // height: '100%',
             backgroundSize: 'cover',
             backgroundRepeat: 'no-repeat',
             backgroundAttachment: 'fixed'
@@ -67,11 +65,8 @@ const ReadMore = () => {
                 And to more <b> schoollog magic!</b>
             </Text>
         </Box>
-        <BreakDesign/>
-        <Box bg={'white'}  pt={'50px'}>
-            {/* <Box align='center' pt={'50px'} >
-                <Img src="schoollog.png" w={{ base: '200px', md: '260', lg: '300px' }} ></Img>
-            </Box> */}
+        <BreakDesign />
+        <Box bg={'white'} pt={'50px'}>
             <Text mx={{ base: '20px', md: '80px', lg: '178px' }} mt={'20px'} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'30px'} >
                 <b>Mission </b> & <b> Vission</b>
             </Text>
@@ -111,7 +106,6 @@ const ReadMore = () => {
             </Box>
             <Footer />
         </Box>
-
     </Box>);
 }
 

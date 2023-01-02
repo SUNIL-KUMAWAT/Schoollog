@@ -1,8 +1,7 @@
-import { Box, Button, Flex, Heading, Img, Text } from "@chakra-ui/react"
+import { Box, Button, Flex, Img, Text } from "@chakra-ui/react"
 import Link from "next/link";
 import { Divider } from '@chakra-ui/react'
 import Footer from "../components/Footer";
-import Form from "../components/Form";
 
 
 const Testimonials = () => {
@@ -39,7 +38,7 @@ const Testimonials = () => {
             Testimonials
         </Text>
         <Text mt={'30px'} fontFamily={"['Montserrat, sans-serif']"} fontWeight='hairline'
-         fontSize={{ base: '24px', lg: '30px' }} mx={{ base: '10px', md: '100px', lg: '200px' }}>
+            fontSize={{ base: '24px', lg: '30px' }} mx={{ base: '10px', md: '100px', lg: '200px' }}>
             The  <strong> right feedbacks help </strong> us grow. The <strong> kind compliments </strong> keep us motivated.
             At the end of the day, the <strong> words from our clients matter </strong> the <strong> most! </strong>
         </Text>
@@ -77,6 +76,19 @@ const Testimonials = () => {
             </Flex>
         </>
         ))}
+        <Box bg={'#1c1c1c'} my={'60px'} py={'60px'} align={'center'}>
+            <Text color={'white'} mx={{ base: '20px', md: '80px', lg: '190px' }} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'30px'} >
+                Thanks for the surprise visit!
+            </Text>
+            <Button mt={'40px'} align={'center'} backgroundColor={'white'} fontFamily={'sans-serif'} border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'} px={'25px'}  >
+                <Link href="/">TAKE ME HOME</Link>
+            </Button>
+        </Box>
+        <Footer />
+    </Box>
+}
+export default Testimonials;
+
 
 
         {/* // <Divider borderWidth={'2px'} variant={'dashed'} borderColor={'gray.100'} my={'25px'} />
@@ -140,18 +152,3 @@ const Testimonials = () => {
                 //         <Text fontSize={'14px'} fontWeight={'medium'}>Director of Marketing, Eastern Dental</Text>
                 //     </Box>
                 // </Flex> */}
-
-        <Box bg={'#1c1c1c'} my={'60px'} py={'60px'} align={'center'}>
-            <Text color={'white'} mx={{ base: '20px', md: '80px', lg: '190px' }} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'30px'} >
-                Thanks for the surprise visit!
-            </Text>
-            <Button mt={'40px'} align={'center'} backgroundColor={'white'} fontFamily={'sans-serif'} border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'} px={'25px'}  >
-                <Link href="/">TAKE ME HOME</Link>
-            </Button>
-        </Box>
-        <Footer />
-    </Box>
-
-}
-
-export default Testimonials;

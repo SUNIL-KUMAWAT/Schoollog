@@ -1,5 +1,4 @@
-import { EmailIcon, PhoneIcon } from "@chakra-ui/icons";
-import { Box, Text, Heading, Flex, AspectRatio, Divider, Stack, Button, Spacer, color } from "@chakra-ui/react";
+import { Box, Text, Flex, AspectRatio, Divider, Stack, Button, Spacer } from "@chakra-ui/react";
 import Link from "next/link";
 import { AiOutlineCopyright, AiOutlineGlobal, AiOutlineInstagram, AiOutlineMail, AiOutlineMobile, AiOutlineYoutube } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -26,8 +25,6 @@ const Footer = () => {
       },
    ]
 
-
-
    return (
       <Flex id={'Footer'} position={'relative'} direction={{ base: 'column', md: 'row' }} w={'100%'} bg={'#1f2e2e'} >
          <Box p={'30px'} minW={{ base: 'auto', md: '400px' }} w={{ base: 'auto', md: '300px', lg: '500px' }} ml={{ base: '1px', md: '50px' }} >
@@ -40,8 +37,7 @@ const Footer = () => {
          </Box>
          <Spacer />
          <Box mt={{ base: '40px', md: '30px' }}
-            mr={{ base: 'none', md: '100px', lg: '150px' }}
-         //  pl={{ base: '1px', md: '10px', lg: '100px' }}       
+            mr={{ base: 'none', md: '100px', lg: '150px' }}     
          >
 
             <Stack p={'10px'} w={{ base: 'auto', md: '300px', lg: '400px' }} direction='row' h={{ base: 'auto', md: '70px', lg: '80px' }} marginX={{ base: 'auto', md: '1px' }} backgroundColor={'black'} >
@@ -65,7 +61,6 @@ const Footer = () => {
                </Flex>
             </Stack>
             <Stack p={'10px'} w={{ base: 'auto', md: '300px', lg: '400px' }} direction='row' h={{ base: 'auto', md: '80px', lg: '80px' }} marginX={{ base: 'auto', md: '1px' }} backgroundColor={'black'} mt={'20px'}>
-
                <AiOutlineGlobal fontSize={'55px'} color={'white'} />
                <Divider orientation='vertical' />
                <Flex mt={'20px'} pl={'20px'} direction={'column'}>
@@ -91,9 +86,7 @@ const Footer = () => {
                <Text fontSize={{ base: '14', md: '15', lg: '18' }} color={'white'}>Partner Us</Text>
             </Stack>
          </Box>
-         <Flex position={'absolute'}
-            style={{ bottom: '0px', right: '0px' }}
-         >
+         <Flex position={'absolute'} style={{ bottom: '0px', right: '0px' }}>
             <AiOutlineCopyright color='white' style={{ marginTop: '2px' }} />
             <Text fontSize={'12'} color={'white'} >  <b>Schoollog All</b> RIGHTS RESERVED</Text>
          </Flex>

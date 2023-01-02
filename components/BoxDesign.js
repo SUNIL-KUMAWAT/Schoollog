@@ -1,14 +1,13 @@
-import { Box, Grid, GridItem, Img, Text } from "@chakra-ui/react";
+import { Grid, GridItem, Img, Text } from "@chakra-ui/react";
 
 const BoxDesign = () => {
     return <>
-
         <Grid
             h='300px'
             templateRows='repeat(2, 1fr)'
             templateColumns='repeat(3, 1fr)'
             gap={3}
-          
+
         >
             <GridItem rowSpan={2} colSpan={1} borderRadius={'20px'} >
                 <Img alt="" objectFit={'cover'}

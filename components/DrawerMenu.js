@@ -1,35 +1,10 @@
-import { ChatIcon, ChevronDownIcon, ChevronUpIcon, EmailIcon, HamburgerIcon, PhoneIcon } from '@chakra-ui/icons';
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-  Button,
-  useDisclosure,
-  Flex,
-  VStack,
-  Text,
-  Box,
-  HStack,
-  color,
-} from '@chakra-ui/react'
-import {
-  Accordion,
-  AccordionItem,
-  AccordionButton,
-  AccordionPanel,
-  AccordionIcon,
-} from '@chakra-ui/react'
-
+import { ChevronDownIcon, ChevronUpIcon, EmailIcon, HamburgerIcon, PhoneIcon } from '@chakra-ui/icons';
+import {Drawer,DrawerBody,DrawerFooter, DrawerOverlay, DrawerContent,DrawerCloseButton, Button, useDisclosure, Flex, VStack, Text, Box, HStack,} from '@chakra-ui/react'
 import { useRef, useState } from 'react'
-// import { AiOutlineWhatsApp } from '@chakra-ui/react'
-import { AiOutlineCopyrightCircle, AiOutlineMessage, AiOutlineWhatsApp } from "react-icons/ai";
+import { AiOutlineCopyrightCircle, AiOutlineWhatsApp } from "react-icons/ai";
 import { useRouter } from 'next/router';
 import Link from 'next/link';
 import { FaLinkedinIn } from "react-icons/fa";
-
 
 const DrawerMenu = () => {
   const router = useRouter();

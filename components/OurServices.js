@@ -1,4 +1,4 @@
-import { Box, Flex, Grid, Heading, HStack } from "@chakra-ui/react";
+import { Box, Flex, Heading } from "@chakra-ui/react";
 
 const OurServices = () => {
     const about = [
@@ -32,10 +32,7 @@ const OurServices = () => {
                             {d.data}
                         </Box>
                     )
-
                 })}
-
-
             </Flex>
         </Box>
     );
