@@ -96,15 +96,3 @@ const Footer = () => {
 
 export default Footer;
 
-
-
-
-
-
-
-
-
-{/* <Button  _hover={{ transform: 'scale(.9)', border:'1px solid white', borderRadius:'50%', backgroundColor:'#1f2e2e',}} p={0} variant={'flused'}> <Link href='https://www.facebook.com/schoollog/' target="_blank"> <FiFacebook cursor={'pointer'} style={{  height: '24px', width: '24px' }} color={'white'}/></Link></Button>
-               <Button ml={'5px'} _hover={{ transform: 'scale(.9)',border:'1px solid white', borderRadius:'50%', backgroundColor:'#1f2e2e', }} p={0} variant={'flused'}><Link href='https://www.instagram.com/schoollog.in/channel/' target="_blank"> < AiOutlineInstagram cursor={'pointer'} style={{ height: '28px', width: '28px', }} color={'white'} /></Link></Button>
-               <Button ml={'5px'} _hover={{ transform: 'scale(.9)',border:'1px solid white', borderRadius:'50%', backgroundColor:'#1f2e2e', }} p={0} variant={'flused'}><Link href='https://www.youtube.com/channel/UCpDf-7sWHt6lJxwnB_iuOMA' target="_blank"> <AiOutlineYoutube cursor={'pointer'} style={{ height: '30px', width: '28px',  }} color={'white'} /></Link></Button>
-               <Button ml={'5px'} _hover={{ transform: 'scale(.9)',border:'1px solid white', borderRadius:'50%', backgroundColor:'#1f2e2e', }} p={0} variant={'flused'}><Link href='https://in.linkedin.com/school/schoollog/' target="_blank"> <FaLinkedinIn cursor={'pointer'} style={{ height: '26px', width: '28px' }} color={'white'} /></Link> </Button> */}

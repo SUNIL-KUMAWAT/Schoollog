@@ -10,7 +10,7 @@ const CorePeople = () => {
         },
         {
             image: 'salini.jpeg',
-            Name: 'SALINI SINGH',
+            Name: 'SHALINI SINGH',
             Position: 'Content Manager'
         },
         {
