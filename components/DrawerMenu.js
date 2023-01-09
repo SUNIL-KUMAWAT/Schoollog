@@ -10,7 +10,6 @@ const DrawerMenu = () => {
   const router = useRouter();
   const headerTitle = [
     { id: '/', title: 'Home', },
-    // { id: "/#AboutUs", title: 'About Us', },
     { id: "/ReadMore", target: '_blank', title: 'About Us', },
     { id: 2, title: 'Our Services', },
     { id: "/#ourclient", title: 'Our Client', },
