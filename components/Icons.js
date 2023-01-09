@@ -40,8 +40,3 @@ const Icons = () => {
     );
 }
 export default Icons;
-
-
-{/* <Button _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'}><AiOutlineWhatsApp cursor={'pointer'} style={{ padding: '8px', height: '32px', width: '32px', boxShadow: '0px 0px 8px blue', marginTop: '1px', backgroundColor: 'white', }} /></Button>
-                <Button _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'}>< AiOutlineMessage cursor={'pointer'} style={{ padding: '8px', height: '32px', width: '32px', boxShadow: '0px 0px 8px blue', marginTop: '5px', backgroundColor: 'white' }} /></Button>
-                <Button _hover={{ transform: 'scale(1.1)', }} p={0} variant={'flused'}><PhoneIcon cursor={'pointer'} style={{ padding: '8px', height: '32px', width: '32px', boxShadow: '0px 0px 8px blue', marginTop: '5px', backgroundColor: 'white' }} /></Button> */}
