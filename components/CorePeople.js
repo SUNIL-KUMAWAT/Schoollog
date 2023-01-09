@@ -4,70 +4,31 @@ const CorePeople = () => {
 
     const Gallery = [
         {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
+            image: 'chandra.jpeg',
+            Name: 'CHANDRA PRAKASH',
+            Position: 'Digital Marketing Manager '
         },
         {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
+            image: 'salini.jpeg',
+            Name: 'SALINI SINGH',
+            Position: 'Content Manager'
         },
         {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
+            image: 'aanchal.jpeg',
+            Name: 'AANCHAL AGARWAL',
+            Position: 'Digital Marketing Executive'
         },
         {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
+            image: 'monika.jpeg',
+            Name: 'MONIKA KUMARI',
+            Position: 'Digital Marketing Executive'
         },
         {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
+            image: 'avatar.png',
+            Name: 'more...',
+            Position: ''
         },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
-        {
-            image: 'https://bit.ly/dan-abramov',
-            Name: 'SUNIL KUMAR KUMAWAT',
-            Position: 'Front-end Developer'
-        },
+       
     ]
 
     return <Box>
@@ -91,7 +52,7 @@ const CorePeople = () => {
                                 src={e.image}
                                 alt='Dan Abramov'
                             />
-                            <Text mt={'20px'} fontSize={'14px'}>{e.Name}</Text>
+                            <Text mt={'20px'} fontWeight={'semibold'} fontSize={'14px'}>{e.Name}</Text>
                             <Text fontSize={'14px'}>{e.Position}</Text>
                         </Box>
                     </WrapItem>
