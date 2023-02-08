@@ -22,7 +22,7 @@ const DrawerMenu = () => {
   const services = [
     { id: "/#SocialMediaMarketing", title: 'Social Media Marketing', },
     { id: "/#GraphicDesign", title: 'Graphic Design', },
-    { id: "/#WebDesign", title: 'Web Design', },
+    { id: "/#WebDesign", title: 'Google/Facebook Ads', },
     { id: "/#Seo", title: 'SEO', },
   ]
 

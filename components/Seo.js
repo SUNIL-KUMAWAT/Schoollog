@@ -21,8 +21,8 @@ const Seo = () => {
                             </Text>
                             <Text lineHeight={'40px'} fontFamily={"['Montserrat, sans-serif']"} color={'#33334d'}
                                 mt={'10px'} fontSize={{ base: '25', lg: '32' }} w={{ base: '100%', lg: '72%' }}>
-                                Because the business topper&apos;s website deserves to be on top of
-                                the Google results too!  <strong>Let&apos;s stuff it with the right keywords!</strong>
+                            Get a chance to rank on top in google search when a potential 
+                            parent/student searches for <strong> top school in your city </strong>
                             </Text>
                         </Box>
                         <Box w={{ base: '180px', md: '400px' }}>
@@ -34,7 +34,7 @@ const Seo = () => {
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"}
                         border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }}
                         borderRadius={'20px'} px={'25px'} align='center'  >
-                        <Link href="/ReadMore">READ MORE</Link>
+                        <Link href="/ReadMore">Subscribe Now</Link>
                     </Button>
                 </Box>
             </Box>
