@@ -44,7 +44,7 @@ const ReadMore = () => {
             <Text mx={{ base: '20px', md: '80px', lg: '178px' }} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" mt={'50px'} fontSize={'20px'} >
                 <b>We&apos;re no beginners but we </b>
                 still hold the
-                <b> curiosity and excitement</b>
+                <b> curiosity and excitement </b>
                 of a beginner and
                 <b> approach </b>
                 each of our projects with that attitude.
@@ -86,13 +86,8 @@ const ReadMore = () => {
                 <Text color={'white'} mx={{ base: '20px', md: '80px', lg: '190px' }} align={'center'} lineHeight={'30px'} fontFamily="['Montserrat, sans-serif']" fontSize={'30px'} >
                     WHY CHOOSE US
                 </Text>
-                <Text color={'#6f6f6f'} mt={'30px'} mx={{ base: '20px', md: '80px', lg: '170px' }} align={'center'} lineHeight={'26px'} fontFamily="['Montserrat, sans-serif']" fontSize={'18px'} >
-                    Because client satisfaction is our priority No. 1. We focus on building a good
-                    client relationship culture and that has worked well for us. Most of the works
-                    we get are by reference from our awesome clients! So far we could serve 500+
-                    companies in 10 countries from 3 continents. We wouldn&apos;t have been able to accomplish
-                    this much if it wasn&apos;t by reference. If we could create one satisfied client, we can
-                    create a million more! That is our experience.
+                <Text color={'#6f6f6f'} mt={'30px'} mx={{ base: '20px', md: '80px', lg: '170px' }} align={'center'} lineHeight={'26px'} fontFamily="['Montserrat, sans-serif']" fontSize={{base:'18px',md:'24px',lg:'24px'}} >
+                500+ schools |10 states | Team of IITians
                 </Text>
             </Box>
             <CorePeople />

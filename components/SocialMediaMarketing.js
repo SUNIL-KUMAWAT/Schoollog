@@ -34,11 +34,17 @@ const SocialMediaMarketing = () => {
                                 style={{ letterSpacing: '3px', wordSpacing: '5px' }}>
                                 SOCIAL MEDIA MARKETING
                             </Text>
-                            <Text lineHeight={'40px'} fontFamily={'sans-serif'} align={'center'}
+                            {/* <Text lineHeight={'40px'} fontFamily={'sans-serif'} align={'center'}
                                 fontWeight={'hairline'} mt={'35px'} fontSize={{ base: '25', lg: '30' }}
                                 w={{ base: '100%', lg: '75%' }}>Because great minds like <strong> Zuckerberg </strong>
                                 gifted us <strong> Social Media business tools </strong>
                                 & not making use of them would be a modern day sin
+                            </Text> */}
+                            <Text lineHeight={'40px'} fontFamily={'sans-serif'} align={'center'}
+                                fontWeight={'hairline'} mt={'35px'} fontSize={{ base: '25px',md:'30px', lg: '30px' }}
+                                w={{ base: '100%', lg: '85%' }}>
+                            Promote your school via reels, shorts, posts on <strong> instagram, youtube, 
+                            facebook </strong>  advertising and marketing services - Google / Facebook ads
                             </Text>
                         </Box>
                         <Box w={{ base: '180px', md: '220px', lg: '550px' }}><Img src='/mobilesmm.png'
@@ -49,7 +55,7 @@ const SocialMediaMarketing = () => {
                 <Box align='center' mb={'40px'} >
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'} px={'25px'} align='center'  >
                         <Link href="/ReadMore">
-                            READ MORE
+                        Subscribe Now
                         </Link>
                     </Button>
                 </Box>

@@ -24,10 +24,8 @@ const GraphicDesign = () => {
                                 mt={'40px'}
                                 fontSize={{ base: '25', md: '26', lg: '30' }}
                                 w={{ base: '100%', lg: '70%' }}>
-                                Because <strong  >never underestimate </strong>
-                                the power of an <strong > attractive & well communicative image or design! </strong>
-                                Just never! This generation is all
-                                about visuals!
+                                Get access to the <strong> best design </strong> which gets resonated with your brand identity. 
+                                Our team will make sure your brand looks <strong> the best on the internet </strong>
                             </Text>
                         </Box>
                         <Box w={{ base: '160px', md: '200px', lg: '320px' }}>
@@ -41,7 +39,7 @@ const GraphicDesign = () => {
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} border={'1px solid gray'}
                         size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'}
                         px={'25px'} align='center'  >
-                        <Link href="/ReadMore">READ MORE</Link>
+                        <Link href="/ReadMore">Subscribe Now</Link>
                     </Button>
                 </Box>
             </Box>

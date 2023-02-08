@@ -31,12 +31,12 @@ const Navbar = () => {
         <Text fontSize={{ base: '18px', md: '24', lg: '30px' }}
           style={{ letterSpacing: '1px', wordSpacing: '1px', }}
           color={'blabk'} fontFamily={"['Montserrat, sans-serif']"}>
-          Want To Grow Your School Online?
+          Want to increase admissions?
         </Text>
         <Text pb={'15px'} fontSize={{ base: '18px', md: '24', lg: '30px' }}
           style={{ letterSpacing: '0px', wordSpacing: '0px' }}
           fontFamily={""}>
-          <strong> We Provide Complete Digital Marketing Solutions</strong>
+          <strong>We Provide Complete Digital Marketing Solutions</strong>
         </Text>
       </Box>
       <Box bgColor={'white'} >
@@ -49,8 +49,8 @@ const Navbar = () => {
           disableButtonsControls
           autoPlay
           infinite
-          autoPlayInterval={3000}
-          animationDuration={1000}
+          autoPlayInterval={6000}
+          animationDuration={2000}
           mouseTracking items={items} />
       </Box>
     </Box>

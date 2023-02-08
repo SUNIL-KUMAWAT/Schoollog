@@ -36,7 +36,7 @@ const WhoAre = () => {
                             </Text>
                             <Text  lineHeight={'40px'} fontFamily={'sans-serif'} align={'center'}
                                 fontWeight={'hairline'} mt={'35px'} fontSize={{ base: '25', lg: '30' }}
-                                w={{ base: '100%', lg: '80%' }}>A team of young professionals with great passion 
+                                w={{ base: '100%', lg: '80%' }}>A team of<strong>  IItians </strong>with great passion 
                                 for <strong>  branding, advertising & digital marketing </strong>  at your service! 
                                 The <strong> Schoollog  </strong>way is a promise of nourishment for your brand!
                             </Text>
@@ -49,7 +49,7 @@ const WhoAre = () => {
                 <Box align='center'  mb={'40px'} >
                     <Button backgroundColor={'white'} fontFamily={"['Montserrat, sans-serif']"} border={'1px solid gray'} size={'sm'} _hover={{ color: 'white', backgroundColor: 'black' }} borderRadius={'20px'} px={'25px'} align='center'  >
                         <Link href="/ReadMore">
-                            READ MORE
+                        Subscribe Now
                         </Link>
                     </Button>
                 </Box>

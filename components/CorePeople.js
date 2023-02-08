@@ -4,29 +4,19 @@ const CorePeople = () => {
 
     const Gallery = [
         {
+            image: 'abhishek.jfif',
+            Name: 'Abhishek Singh',
+            Position: 'Co-founder'
+        },
+        {
+            image: 'manoj.jpg',
+            Name: 'Manoj Kumar',
+            Position: 'Co-founder'
+        },
+        {
             image: 'chandra.jpeg',
             Name: 'CHANDRA PRAKASH',
             Position: 'Digital Marketing Manager '
-        },
-        {
-            image: 'salini.jpeg',
-            Name: 'SHALINI SINGH',
-            Position: 'Content Manager'
-        },
-        {
-            image: 'aanchal.jpeg',
-            Name: 'AANCHAL AGARWAL',
-            Position: 'Digital Marketing Executive'
-        },
-        {
-            image: 'monika.jpeg',
-            Name: 'MONIKA KUMARI',
-            Position: 'Digital Marketing Executive'
-        },
-        {
-            image: 'avatar.png',
-            Name: 'more...',
-            Position: ''
         },
        
     ]
